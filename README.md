@@ -171,7 +171,7 @@ having count(distinct category)=(
 ```
 
 11. **write a SQL Query to create each shift and number of orders(Example Morning <=12,Afternoon between 12 and 17,Evening >17
-
+```sql
 with Shift_wise_sale
 as (
 		Select *,
@@ -186,5 +186,5 @@ as (
 Select shift, count(*) as total_orders
     from Shift_wise_sale
     group by shift;
-  
+  ```
 
